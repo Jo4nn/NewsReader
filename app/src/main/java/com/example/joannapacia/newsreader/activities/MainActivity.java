@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.activities;
+package com.example.joannapacia.newsreader.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,9 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.joannapacia.test.R;
-import com.example.joannapacia.test.R.drawable;
-import com.example.joannapacia.test.adapters.SectionsPagerAdapter;
+import com.example.joannapacia.newsreader.R;
+import com.example.joannapacia.newsreader.R.drawable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-    private SectionsPagerAdapter mSectionsPagerAdapter;
+    private com.example.joannapacia.newsreader.adapters.SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setLogo(drawable.brand_name);
         // create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        mSectionsPagerAdapter = new com.example.joannapacia.newsreader.adapters.SectionsPagerAdapter(getSupportFragmentManager());
 
         // set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);

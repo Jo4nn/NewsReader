@@ -1,4 +1,4 @@
-package com.example.joannapacia.test;
+package com.example.joannapacia.newsreader;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

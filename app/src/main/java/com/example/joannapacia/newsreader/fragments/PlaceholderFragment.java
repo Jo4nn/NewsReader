@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.fragments;
+package com.example.joannapacia.newsreader.fragments;
 
 /**
  * Created by joannapacia on 12/03/17.
@@ -11,8 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.joannapacia.test.R;
-import com.example.joannapacia.test.utilities.AsyncListViewLoader;
+import com.example.joannapacia.newsreader.R;
+import com.example.joannapacia.newsreader.utilities.AsyncListViewLoader;
 
 /**
  * A placeholder fragment containing a simple view.

@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.activities;
+package com.example.joannapacia.newsreader.activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.example.joannapacia.test.R;
+import com.example.joannapacia.newsreader.R;
 
 import java.util.HashMap;
 
@@ -31,7 +31,7 @@ public class WebViewActivity extends AppCompatActivity {
         // set the brand logo in the tool bar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setLogo(com.example.joannapacia.test.R.drawable.brand_name);
+        toolbar.setLogo(R.drawable.brand_name);
 
         Intent intent = getIntent();
         HashMap<String, String> hashMap = (HashMap<String, String>) intent.getSerializableExtra("HASHMAP");

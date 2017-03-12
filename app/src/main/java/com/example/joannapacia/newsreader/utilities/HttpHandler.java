@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.utilities;
+package com.example.joannapacia.newsreader.utilities;
 
 /**
  * Created by joannapacia on 07/03/17.

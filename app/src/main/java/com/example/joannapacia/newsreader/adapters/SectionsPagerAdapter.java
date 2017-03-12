@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.adapters;
+package com.example.joannapacia.newsreader.adapters;
 
 /**
  * Created by joannapacia on 12/03/17.
@@ -7,8 +7,6 @@ package com.example.joannapacia.test.adapters;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import com.example.joannapacia.test.fragments.PlaceholderFragment;
 
 /**
  * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -28,11 +26,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // returning the current tabs
         switch (position) {
             case 0:
-                return PlaceholderFragment.newInstance("http://www.independent.co.uk/api/v1/11831/json");
+                return com.example.joannapacia.newsreader.fragments.PlaceholderFragment.newInstance("http://www.independent.co.uk/api/v1/11831/json");
             case 1:
-                return PlaceholderFragment.newInstance("http://www.independent.co.uk/api/v1/11916/json");
+                return com.example.joannapacia.newsreader.fragments.PlaceholderFragment.newInstance("http://www.independent.co.uk/api/v1/11916/json");
             case 2:
-                return PlaceholderFragment.newInstance("http://www.independent.co.uk/api/v1/11981/json");
+                return com.example.joannapacia.newsreader.fragments.PlaceholderFragment.newInstance("http://www.independent.co.uk/api/v1/11981/json");
             default:
                 return null;
         }

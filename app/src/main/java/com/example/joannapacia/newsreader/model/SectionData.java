@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.model;
+package com.example.joannapacia.newsreader.model;
 
 /**
  * Created by joannapacia on 08/03/17.

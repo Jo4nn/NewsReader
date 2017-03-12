@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.adapters;
+package com.example.joannapacia.newsreader.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,12 +9,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.joannapacia.test.R;
-import com.example.joannapacia.test.R.layout;
-import com.example.joannapacia.test.model.LinkData;
+import com.example.joannapacia.newsreader.R;
+import com.example.joannapacia.newsreader.R.layout;
+import com.example.joannapacia.newsreader.activities.WebViewActivity;
+import com.example.joannapacia.newsreader.model.LinkData;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -104,7 +106,7 @@ public class LinkAdapter extends ArrayAdapter<LinkData> {
 
             Picasso.with(mContext)
                     .load(urlImage)
-                    .placeholder(R.mipmap.ic_launcher)
+                    .placeholder(R.drawable.logo)
                     .resize(400,400)
                     .centerCrop()
                     .into(holder.itemImage);
@@ -112,11 +114,11 @@ public class LinkAdapter extends ArrayAdapter<LinkData> {
             // Set the results into TextViews
             holder.itemHeadline.setText("Unknown");
             holder.itemDescription.setText("Unknown");
-            holder.itemImage.setImageResource(R.mipmap.ic_launcher);
+            holder.itemImage.setImageResource(R.drawable.logo);
         }
 
         // used to pass details to ArticleActivity.class
-        final java.util.HashMap<String, String> hashMap= new java.util.HashMap<>();
+        final HashMap<String, String> hashMap= new HashMap<>();
         hashMap.put("LINK", stringLink);
         hashMap.put("HEADLINE", stringHeadline);
         hashMap.put("URLIMAGE", urlImage);
@@ -125,8 +127,7 @@ public class LinkAdapter extends ArrayAdapter<LinkData> {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, com.example.joannapacia.test.activities
-                        .WebViewActivity.class);
+                Intent intent = new Intent(mContext, WebViewActivity.class);
                 intent.putExtra("HASHMAP", hashMap);
                 v.getContext().startActivity(intent);
             }

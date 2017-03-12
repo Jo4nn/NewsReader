@@ -1,4 +1,4 @@
-package com.example.joannapacia.test;
+package com.example.joannapacia.newsreader;
 
 import org.junit.Test;
 

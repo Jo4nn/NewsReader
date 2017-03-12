@@ -1,4 +1,4 @@
-package com.example.joannapacia.test.utilities;
+package com.example.joannapacia.newsreader.utilities;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ListView;
 
-import com.example.joannapacia.test.model.LinkData;
-import com.example.joannapacia.test.adapters.LinkAdapter;
+import com.example.joannapacia.newsreader.model.LinkData;
+import com.example.joannapacia.newsreader.adapters.LinkAdapter;
 
 import java.util.ArrayList;
 

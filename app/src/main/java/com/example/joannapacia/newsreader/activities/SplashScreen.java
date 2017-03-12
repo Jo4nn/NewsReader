@@ -1,7 +1,10 @@
-package com.example.joannapacia.test.activities;
+package com.example.joannapacia.newsreader.activities;
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.widget.ProgressBar;
+
+import com.example.joannapacia.newsreader.R;
 
 /**
  * Created by joannapacia on 12/03/17.
@@ -17,12 +20,12 @@ public class SplashScreen extends android.support.v7.app.AppCompatActivity {
     @Override
     protected void onCreate(android.os.Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.joannapacia.test.R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_splash_screen);
 
-        spinner=(ProgressBar)findViewById(com.example.joannapacia.test.R.id.circular_progress_bar);
+        spinner=(ProgressBar)findViewById(R.id.circular_progress_bar);
         spinner.setVisibility(android.view.View.VISIBLE);
 
-        android.animation.ObjectAnimator anim = android.animation.ObjectAnimator.ofInt(spinner, "progress", 0, 100);
+        ObjectAnimator anim = ObjectAnimator.ofInt(spinner, "progress", 0, 100);
         anim.setDuration(SPLASH_TIME_OUT);
         anim.setInterpolator(new android.view.animation.DecelerateInterpolator());
         anim.start();
